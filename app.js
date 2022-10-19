@@ -46,7 +46,7 @@ urunSil.addEventListener('click', function (e) {
         veri = urunler.length - 1;
             if (veri == 0) {
                 tumSil.style.display = 'none';
-                e.preventDefault();
             }
+        e.preventDefault();
     }
 });
