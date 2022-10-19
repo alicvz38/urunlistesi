@@ -43,10 +43,10 @@ urunSil.addEventListener('click', function (e) {
     urunler = document.querySelectorAll('li');
     if (e.target.className === 'bunuSil') {
         e.target.parentElement.remove();
+        veri = urunler.length - 1;
+            if (veri == 0) {
+                tumSil.style.display = 'none';
+                e.preventDefault();
+            }
     }
-    veri = urunler.length - 1;
-    if (veri == 0) {
-        tumSil.style.display = 'none';
-    }
-    e.preventDefault();
 });
